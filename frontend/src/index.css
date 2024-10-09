@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inp-type{
+     @apply py-2 px-3 rounded-md border border-slate-200 focus:border-sky-700 focus:outline-0 
+}
+.btn{
+     @apply py-2 px-5 bg-sky-600 rounded-md text-white transition-all hover:bg-sky-700
+}
+.delete-btn{
+     @apply bg-red-600 text-white hover:bg-red-700 py-1 px-2 rounded-md text-xs;
+}
+.container{
+     @apply max-w-screen-xl w-full mx-auto px-5;
+}
+.nav-bar li:not(:last-child){
+     @apply mr-10
+}
+.nav-bar li a{
+     @apply border-b-2 inline-block text-xl py-2 transition-all border-transparent hover:border-sky-700 hover:text-sky-700;
+}
+.nav-bar li a.active{
+     @apply border-sky-700 text-sky-700;
+}
