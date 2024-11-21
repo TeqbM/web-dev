@@ -4,6 +4,9 @@ import Header from "./Components/Header"
 import Footer from "./Components/Footer"
 import Blog from './Pages/Blog'
 import Home from './Pages/Home'
+import Gallery from './Pages/Gallery'
+import SingleBlog from './Pages/SingleBlog'
+
 
 function App() {
 
@@ -12,10 +15,12 @@ function App() {
 
       <BrowserRouter>
         <Header />
-        <main className='py-3'>
+        <main>
           <Routes>
             <Route index element={<Home />}/>
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/" element={<Blog />} />
+            <Route path="/blog/:id" element={<SingleBlog />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
         </main>
         <Footer />
