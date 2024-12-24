@@ -29,16 +29,14 @@ export default function SingleBlog() {
               <Link to={`../blog/${parseInt(id) >1? parseInt(id)-1: 10 }`} className="btn">prev</Link>
               <Link to={`../blog/${parseInt(id) <10? parseInt(id)+1: 1 }`} className="btn">next</Link>
             </>
+          ): 
+          (
+            <div className='text-center'>
+              <span className='animate-spin	inline-block border-4 rounded-full border-slate-300 spin- h-10 w-10 border-t-sky-600'></span>
+              <br />
+              Loading...
+            </div>
           )
-        
-        : 
-        (
-          <div className='text-center'>
-            <span className='animate-spin	inline-block border-4 rounded-full border-slate-300 spin- h-10 w-10 border-t-sky-600'></span>
-            <br />
-            Loading...
-          </div>
-        )
         }
           
     </div>

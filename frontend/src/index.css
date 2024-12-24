@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body{
+     @apply bg-slate-900 text-white;
+}
 .inp{
      @apply py-2 px-3 rounded-md border border-slate-200 focus:border-sky-700 focus:outline-0 
 }
@@ -18,10 +20,10 @@
      @apply mr-10
 }
 .nav-bar li a{
-     @apply border-b-2 inline-block text-xl py-2 transition-all border-transparent hover:border-sky-700 hover:text-sky-700;
+     @apply border-b-2 inline-block text-xl py-2 transition-all border-transparent hover:border-white;
 }
 .nav-bar li a.active{
-     @apply border-sky-700 text-sky-700;
+     @apply border-white;
 }
 .card{
      @apply border border-slate-200 p-3 rounded-lg;

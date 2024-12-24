@@ -1,9 +1,13 @@
-import React from 'react'
+
 
 export default function Home() {
+  
   return (
-    <div>
-      Home
+    <>
+    <div className="h-screen">
+      ded
     </div>
+    <div className="h-screen"></div>
+    </>
   )
 }
