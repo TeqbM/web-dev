@@ -31,3 +31,42 @@ body{
 h1{
      @apply text-3xl text-sky-600 font-bold
 }
+
+.image-section {
+     position: relative;
+     width: 80%;
+     height: 100vh;
+     overflow: hidden;
+     margin: 0 auto;
+ }
+ 
+ .image-section img {
+     width: 100%;
+     height: 100vh;
+     object-fit: cover;
+     opacity: 0;
+     scale: 0.3;
+ }
+ 
+ .title-text,
+ .description-text {
+     position: absolute;
+     width: 100%;
+     text-align: center;
+     color: #fff;
+     font-size: 3em;
+     top: 0;
+     padding-top: 23vh;
+     opacity: 0;
+ }
+ .title-text{   
+     padding-top: 13vh;
+     
+ }
+ .description-text {
+     height: 100vh;
+     background: linear-gradient(to bottom, #999 0%, rgb(0, 0, 0) 0%);
+     background-position: "100px 100px";
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }

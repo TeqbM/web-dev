@@ -5,13 +5,10 @@ import { gsap } from 'gsap';
 export default function Header(){
      
      useEffect(() => {
-          console.log(document.querySelector('.navbar')); // Check if the navbar is selected
-          console.log(document.querySelectorAll('.nav-item')); // Check if the nav items are selected
-          
           const timeline = gsap.timeline({ defaults: { duration: 1, ease: 'power2.out' } });
         
-          timeline.fromTo('.navbar', { opacity: 0, y: -100, }, { opacity: 1, y: 0, }); // Links animate from left
-          timeline.fromTo('.nav-item', { opacity: 0, y: -100, stagger: 0.2 }, { opacity: 1, y: 0, stagger: 0.2 }); // Links animate from left
+          timeline.fromTo('.navbar', { opacity: 0, y: -100, }, { opacity: 1, y: 0, });
+          timeline.fromTo('.nav-item', { opacity: 0, y: -100, stagger: 0.2 }, { opacity: 1, y: 0, stagger: 0.2 });
 
         }, []);
         
